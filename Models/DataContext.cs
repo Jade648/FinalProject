@@ -12,11 +12,6 @@ public class DataContext : DbContext
 
   public DbSet<Employee> Employees {get; set;}
 
-  public void AddDiscount(Discount Discount)
-  {
-    this.Add(Discount);
-    this.SaveChanges();
-  }
 
   public void AddCustomer(Customer customer)
   {
